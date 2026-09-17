@@ -75,7 +75,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="header" id="inicio">
@@ -214,78 +214,102 @@
       </div>
     </section>
     <section class="section container" id="planes">
-      <div class="section-heading reveal">
+      <div class="section-heading plans-heading reveal">
         <span class="eyebrow">PLANES</span>
         <h2>ELEGÍ CÓMO <span>QUERÉS ENTRENAR.</span></h2>
-        <p>Opciones simples para que elijas la frecuencia que mejor se adapte a vos.</p>
+        <p>Elegí la opción que mejor se adapte a tu semana.</p>
       </div>
 
-      <div class="pricing-grid pricing-grid-clean">
-        <article class="plan-card plan-card-featured reveal">
-          <div class="plan-top">
-            <span class="plan-kicker">PASE LIBRE</span>
-            <span class="plan-badge">MÁS COMPLETO</span>
+      <div class="plans-grid">
+        <article class="membership-card membership-card--featured reveal">
+          <div class="membership-card__head">
+            <div>
+              <span class="membership-card__eyebrow">PASE LIBRE</span>
+              <h3>Entrená sin límites</h3>
+              <p>Lunes a sábados</p>
+            </div>
+            <span class="membership-card__tag">MÁS COMPLETO</span>
           </div>
-          <h3>Entrená sin límites</h3>
-          <p class="plan-frequency">Lunes a sábados</p>
 
-          <div class="plan-prices">
-            <div class="plan-price-row">
-              <span class="payment-type">Efectivo</span>
+          <div class="membership-card__prices">
+            <div class="membership-price">
+              <span>Efectivo</span>
               <strong>$59.000</strong>
             </div>
-            <div class="plan-price-row">
-              <span class="payment-type">Transferencia</span>
+            <div class="membership-price">
+              <span>Transferencia</span>
               <strong>$62.000</strong>
             </div>
           </div>
 
-          <p class="plan-description">La opción ideal para entrenar con total libertad durante la semana.</p>
-          <a href="https://api.whatsapp.com/send?phone=542921495800&text=%C2%A1Hola!%20Qu%C3%A9%20excelente%20decisi%C3%B3n%20escribirnos.%20Bienvenido%20a%20Gimnasio%20Invictus%2C%20tu%20nueva%20casa.%20%F0%9F%8F%86%0AAc%C3%A1%20no%20somos%20solo%20un%20lugar%20para%20venir%20a%20transpirar.%20Somos%20una%20comunidad%20que%20le%20mete%20con%20todo%20para%20superarse%20d%C3%ADa%20a%20d%C3%ADa.%0A%F0%9F%92%A5%20NUESTROS%20PLANES%20%F0%9F%92%A5%0A%F0%9F%94%A5%20Pase%20Libre%20(Lunes%20a%20S%C3%A1bados)%20(Para%20los%20que%20van%20por%20su%20mejor%20versi%C3%B3n%20sin%20excusas)%0AEfectivo%3A%20%2459.000%0ATransferencia%3A%20%2462.000%0A%F0%9F%94%B9%20Plan%203%20Veces%20por%20Semana%20(Ideal%20para%20construir%20disciplina)%0AEfectivo%3A%20%2455.000%0ATransferencia%3A%20%2457.000%0A%F0%9F%91%A5%20Plan%20Grupo%20Familiar%20(5%20veces%20por%20semana)%20(El%20entorno%20lo%20es%20todo%2C%20ven%C3%AD%20con%20los%20tuyos.%20Exclusivo%20transferencia)%0A2%20personas%3A%20%2452.000%20cada%20uno.%0A3%20personas%3A%20%2450.000%20cada%20uno.%0A%E2%8F%B1%EF%B8%8F%20HORARIOS%20PARA%20ENTRENAR%0ALunes%20a%20Viernes%3A%2007%3A30%20a%2012%3A15%20hs%20%E2%80%94%20y%20de%2014%3A00%20a%2021%3A30%20hs.%0AS%C3%A1bados%3A%2010%3A00%20a%2013%3A00%20hs.%0A%F0%9F%93%8D%20Tu%20lugar%20en%20el%20barrio%3A%20Zelarray%C3%A1n%203233.%0APara%20que%20apenas%20lea%20este%20chat%20ya%20arranquemos%20a%20trabajar%2C%20dejame%20ac%C3%A1%20tu%20nombre%20y%20contame%3A%20%C2%BFCu%C3%A1l%20es%20tu%20objetivo%20principal%3F%0A%C2%A1Dale%20que%20hoy%20es%20el%20momento%20exacto%20para%20empezar%2C%20te%20esperamos!%20%F0%9F%92%AA%0A" target="_blank" rel="noopener noreferrer" class="btn btn-primary plan-button">Consultar por WhatsApp</a>
+          <p class="membership-card__description">
+            Para entrenar con total libertad durante la semana.
+          </p>
+
+          <a class="btn btn-primary membership-card__button"
+             href="https://api.whatsapp.com/send?phone=542921495800&text=%C2%A1Hola!%20Qu%C3%A9%20excelente%20decisi%C3%B3n%20escribirnos.%20Bienvenido%20a%20Gimnasio%20Invictus%2C%20tu%20nueva%20casa.%20%F0%9F%8F%86%0AAc%C3%A1%20no%20somos%20solo%20un%20lugar%20para%20venir%20a%20transpirar.%20Somos%20una%20comunidad%20que%20le%20mete%20con%20todo%20para%20superarse%20d%C3%ADa%20a%20d%C3%ADa.%0A%F0%9F%92%A5%20NUESTROS%20PLANES%20%F0%9F%92%A5%0A%F0%9F%94%A5%20Pase%20Libre%20(Lunes%20a%20S%C3%A1bados)%20(Para%20los%20que%20van%20por%20su%20mejor%20versi%C3%B3n%20sin%20excusas)%0AEfectivo%3A%20%2459.000%0ATransferencia%3A%20%2462.000%0A%F0%9F%94%B9%20Plan%203%20Veces%20por%20Semana%20(Ideal%20para%20construir%20disciplina)%0AEfectivo%3A%20%2455.000%0ATransferencia%3A%20%2457.000%0A%F0%9F%91%A5%20Plan%20Grupo%20Familiar%20(5%20veces%20por%20semana)%20(El%20entorno%20lo%20es%20todo%2C%20ven%C3%AD%20con%20los%20tuyos.%20Exclusivo%20transferencia)%0A2%20personas%3A%20%2452.000%20cada%20uno.%0A3%20personas%3A%20%2450.000%20cada%20uno.%0A%E2%8F%B1%EF%B8%8F%20HORARIOS%20PARA%20ENTRENAR%0ALunes%20a%20Viernes%3A%2007%3A30%20a%2012%3A15%20hs%20%E2%80%94%20y%20de%2014%3A00%20a%2021%3A30%20hs.%0AS%C3%A1bados%3A%2010%3A00%20a%2013%3A00%20hs.%0A%F0%9F%93%8D%20Tu%20lugar%20en%20el%20barrio%3A%20Zelarray%C3%A1n%203233.%0APara%20que%20apenas%20lea%20este%20chat%20ya%20arranquemos%20a%20trabajar%2C%20dejame%20ac%C3%A1%20tu%20nombre%20y%20contame%3A%20%C2%BFCu%C3%A1l%20es%20tu%20objetivo%20principal%3F%0A%C2%A1Dale%20que%20hoy%20es%20el%20momento%20exacto%20para%20empezar%2C%20te%20esperamos!%20%F0%9F%92%AA%0A" target="_blank" rel="noopener noreferrer">
+             Consultar por WhatsApp
+          </a>
         </article>
 
-        <article class="plan-card reveal">
-          <div class="plan-top">
-            <span class="plan-kicker">PLAN 3 DÍAS</span>
+        <article class="membership-card reveal">
+          <div class="membership-card__head">
+            <div>
+              <span class="membership-card__eyebrow">PLAN 3 DÍAS</span>
+              <h3>3 veces por semana</h3>
+              <p>Elegí tus días de entrenamiento</p>
+            </div>
           </div>
-          <h3>3 veces por semana</h3>
-          <p class="plan-frequency">Elegí tus días de entrenamiento</p>
 
-          <div class="plan-prices">
-            <div class="plan-price-row">
-              <span class="payment-type">Efectivo</span>
+          <div class="membership-card__prices">
+            <div class="membership-price">
+              <span>Efectivo</span>
               <strong>$55.000</strong>
             </div>
-            <div class="plan-price-row">
-              <span class="payment-type">Transferencia</span>
+            <div class="membership-price">
+              <span>Transferencia</span>
               <strong>$57.000</strong>
             </div>
           </div>
 
-          <p class="plan-description">Una frecuencia equilibrada para construir constancia y progresar semana a semana.</p>
-          <a href="https://api.whatsapp.com/send?phone=542921495800&text=%C2%A1Hola!%20Qu%C3%A9%20excelente%20decisi%C3%B3n%20escribirnos.%20Bienvenido%20a%20Gimnasio%20Invictus%2C%20tu%20nueva%20casa.%20%F0%9F%8F%86%0AAc%C3%A1%20no%20somos%20solo%20un%20lugar%20para%20venir%20a%20transpirar.%20Somos%20una%20comunidad%20que%20le%20mete%20con%20todo%20para%20superarse%20d%C3%ADa%20a%20d%C3%ADa.%0A%F0%9F%92%A5%20NUESTROS%20PLANES%20%F0%9F%92%A5%0A%F0%9F%94%A5%20Pase%20Libre%20(Lunes%20a%20S%C3%A1bados)%20(Para%20los%20que%20van%20por%20su%20mejor%20versi%C3%B3n%20sin%20excusas)%0AEfectivo%3A%20%2459.000%0ATransferencia%3A%20%2462.000%0A%F0%9F%94%B9%20Plan%203%20Veces%20por%20Semana%20(Ideal%20para%20construir%20disciplina)%0AEfectivo%3A%20%2455.000%0ATransferencia%3A%20%2457.000%0A%F0%9F%91%A5%20Plan%20Grupo%20Familiar%20(5%20veces%20por%20semana)%20(El%20entorno%20lo%20es%20todo%2C%20ven%C3%AD%20con%20los%20tuyos.%20Exclusivo%20transferencia)%0A2%20personas%3A%20%2452.000%20cada%20uno.%0A3%20personas%3A%20%2450.000%20cada%20uno.%0A%E2%8F%B1%EF%B8%8F%20HORARIOS%20PARA%20ENTRENAR%0ALunes%20a%20Viernes%3A%2007%3A30%20a%2012%3A15%20hs%20%E2%80%94%20y%20de%2014%3A00%20a%2021%3A30%20hs.%0AS%C3%A1bados%3A%2010%3A00%20a%2013%3A00%20hs.%0A%F0%9F%93%8D%20Tu%20lugar%20en%20el%20barrio%3A%20Zelarray%C3%A1n%203233.%0APara%20que%20apenas%20lea%20este%20chat%20ya%20arranquemos%20a%20trabajar%2C%20dejame%20ac%C3%A1%20tu%20nombre%20y%20contame%3A%20%C2%BFCu%C3%A1l%20es%20tu%20objetivo%20principal%3F%0A%C2%A1Dale%20que%20hoy%20es%20el%20momento%20exacto%20para%20empezar%2C%20te%20esperamos!%20%F0%9F%92%AA%0A" target="_blank" rel="noopener noreferrer" class="btn btn-secondary plan-button">Consultar por WhatsApp</a>
+          <p class="membership-card__description">
+            Una frecuencia equilibrada para mantener constancia y progresar.
+          </p>
+
+          <a class="btn btn-secondary membership-card__button"
+             href="https://api.whatsapp.com/send?phone=542921495800&text=%C2%A1Hola!%20Qu%C3%A9%20excelente%20decisi%C3%B3n%20escribirnos.%20Bienvenido%20a%20Gimnasio%20Invictus%2C%20tu%20nueva%20casa.%20%F0%9F%8F%86%0AAc%C3%A1%20no%20somos%20solo%20un%20lugar%20para%20venir%20a%20transpirar.%20Somos%20una%20comunidad%20que%20le%20mete%20con%20todo%20para%20superarse%20d%C3%ADa%20a%20d%C3%ADa.%0A%F0%9F%92%A5%20NUESTROS%20PLANES%20%F0%9F%92%A5%0A%F0%9F%94%A5%20Pase%20Libre%20(Lunes%20a%20S%C3%A1bados)%20(Para%20los%20que%20van%20por%20su%20mejor%20versi%C3%B3n%20sin%20excusas)%0AEfectivo%3A%20%2459.000%0ATransferencia%3A%20%2462.000%0A%F0%9F%94%B9%20Plan%203%20Veces%20por%20Semana%20(Ideal%20para%20construir%20disciplina)%0AEfectivo%3A%20%2455.000%0ATransferencia%3A%20%2457.000%0A%F0%9F%91%A5%20Plan%20Grupo%20Familiar%20(5%20veces%20por%20semana)%20(El%20entorno%20lo%20es%20todo%2C%20ven%C3%AD%20con%20los%20tuyos.%20Exclusivo%20transferencia)%0A2%20personas%3A%20%2452.000%20cada%20uno.%0A3%20personas%3A%20%2450.000%20cada%20uno.%0A%E2%8F%B1%EF%B8%8F%20HORARIOS%20PARA%20ENTRENAR%0ALunes%20a%20Viernes%3A%2007%3A30%20a%2012%3A15%20hs%20%E2%80%94%20y%20de%2014%3A00%20a%2021%3A30%20hs.%0AS%C3%A1bados%3A%2010%3A00%20a%2013%3A00%20hs.%0A%F0%9F%93%8D%20Tu%20lugar%20en%20el%20barrio%3A%20Zelarray%C3%A1n%203233.%0APara%20que%20apenas%20lea%20este%20chat%20ya%20arranquemos%20a%20trabajar%2C%20dejame%20ac%C3%A1%20tu%20nombre%20y%20contame%3A%20%C2%BFCu%C3%A1l%20es%20tu%20objetivo%20principal%3F%0A%C2%A1Dale%20que%20hoy%20es%20el%20momento%20exacto%20para%20empezar%2C%20te%20esperamos!%20%F0%9F%92%AA%0A" target="_blank" rel="noopener noreferrer">
+             Consultar por WhatsApp
+          </a>
         </article>
 
-        <article class="plan-card reveal">
-          <div class="plan-top">
-            <span class="plan-kicker">GRUPO FAMILIAR</span>
+        <article class="membership-card reveal">
+          <div class="membership-card__head">
+            <div>
+              <span class="membership-card__eyebrow">GRUPO FAMILIAR</span>
+              <h3>Entrenen juntos</h3>
+              <p>5 veces por semana · Transferencia</p>
+            </div>
           </div>
-          <h3>Entrenen juntos</h3>
-          <p class="plan-frequency">5 veces por semana · Transferencia</p>
 
-          <div class="plan-prices">
-            <div class="plan-price-row">
-              <span class="payment-type">2 personas</span>
+          <div class="membership-card__prices">
+            <div class="membership-price">
+              <span>2 personas</span>
               <strong>$52.000 <small>c/u</small></strong>
             </div>
-            <div class="plan-price-row">
-              <span class="payment-type">3 personas</span>
+            <div class="membership-price">
+              <span>3 personas</span>
               <strong>$50.000 <small>c/u</small></strong>
             </div>
           </div>
 
-          <p class="plan-description">Una opción pensada para familias que quieren compartir el entrenamiento.</p>
-          <a href="https://api.whatsapp.com/send?phone=542921495800&text=%C2%A1Hola!%20Qu%C3%A9%20excelente%20decisi%C3%B3n%20escribirnos.%20Bienvenido%20a%20Gimnasio%20Invictus%2C%20tu%20nueva%20casa.%20%F0%9F%8F%86%0AAc%C3%A1%20no%20somos%20solo%20un%20lugar%20para%20venir%20a%20transpirar.%20Somos%20una%20comunidad%20que%20le%20mete%20con%20todo%20para%20superarse%20d%C3%ADa%20a%20d%C3%ADa.%0A%F0%9F%92%A5%20NUESTROS%20PLANES%20%F0%9F%92%A5%0A%F0%9F%94%A5%20Pase%20Libre%20(Lunes%20a%20S%C3%A1bados)%20(Para%20los%20que%20van%20por%20su%20mejor%20versi%C3%B3n%20sin%20excusas)%0AEfectivo%3A%20%2459.000%0ATransferencia%3A%20%2462.000%0A%F0%9F%94%B9%20Plan%203%20Veces%20por%20Semana%20(Ideal%20para%20construir%20disciplina)%0AEfectivo%3A%20%2455.000%0ATransferencia%3A%20%2457.000%0A%F0%9F%91%A5%20Plan%20Grupo%20Familiar%20(5%20veces%20por%20semana)%20(El%20entorno%20lo%20es%20todo%2C%20ven%C3%AD%20con%20los%20tuyos.%20Exclusivo%20transferencia)%0A2%20personas%3A%20%2452.000%20cada%20uno.%0A3%20personas%3A%20%2450.000%20cada%20uno.%0A%E2%8F%B1%EF%B8%8F%20HORARIOS%20PARA%20ENTRENAR%0ALunes%20a%20Viernes%3A%2007%3A30%20a%2012%3A15%20hs%20%E2%80%94%20y%20de%2014%3A00%20a%2021%3A30%20hs.%0AS%C3%A1bados%3A%2010%3A00%20a%2013%3A00%20hs.%0A%F0%9F%93%8D%20Tu%20lugar%20en%20el%20barrio%3A%20Zelarray%C3%A1n%203233.%0APara%20que%20apenas%20lea%20este%20chat%20ya%20arranquemos%20a%20trabajar%2C%20dejame%20ac%C3%A1%20tu%20nombre%20y%20contame%3A%20%C2%BFCu%C3%A1l%20es%20tu%20objetivo%20principal%3F%0A%C2%A1Dale%20que%20hoy%20es%20el%20momento%20exacto%20para%20empezar%2C%20te%20esperamos!%20%F0%9F%92%AA%0A" target="_blank" rel="noopener noreferrer" class="btn btn-secondary plan-button">Consultar por WhatsApp</a>
+          <p class="membership-card__description">
+            Pensado para familias que quieren compartir el entrenamiento.
+          </p>
+
+          <a class="btn btn-secondary membership-card__button"
+             href="https://api.whatsapp.com/send?phone=542921495800&text=%C2%A1Hola!%20Qu%C3%A9%20excelente%20decisi%C3%B3n%20escribirnos.%20Bienvenido%20a%20Gimnasio%20Invictus%2C%20tu%20nueva%20casa.%20%F0%9F%8F%86%0AAc%C3%A1%20no%20somos%20solo%20un%20lugar%20para%20venir%20a%20transpirar.%20Somos%20una%20comunidad%20que%20le%20mete%20con%20todo%20para%20superarse%20d%C3%ADa%20a%20d%C3%ADa.%0A%F0%9F%92%A5%20NUESTROS%20PLANES%20%F0%9F%92%A5%0A%F0%9F%94%A5%20Pase%20Libre%20(Lunes%20a%20S%C3%A1bados)%20(Para%20los%20que%20van%20por%20su%20mejor%20versi%C3%B3n%20sin%20excusas)%0AEfectivo%3A%20%2459.000%0ATransferencia%3A%20%2462.000%0A%F0%9F%94%B9%20Plan%203%20Veces%20por%20Semana%20(Ideal%20para%20construir%20disciplina)%0AEfectivo%3A%20%2455.000%0ATransferencia%3A%20%2457.000%0A%F0%9F%91%A5%20Plan%20Grupo%20Familiar%20(5%20veces%20por%20semana)%20(El%20entorno%20lo%20es%20todo%2C%20ven%C3%AD%20con%20los%20tuyos.%20Exclusivo%20transferencia)%0A2%20personas%3A%20%2452.000%20cada%20uno.%0A3%20personas%3A%20%2450.000%20cada%20uno.%0A%E2%8F%B1%EF%B8%8F%20HORARIOS%20PARA%20ENTRENAR%0ALunes%20a%20Viernes%3A%2007%3A30%20a%2012%3A15%20hs%20%E2%80%94%20y%20de%2014%3A00%20a%2021%3A30%20hs.%0AS%C3%A1bados%3A%2010%3A00%20a%2013%3A00%20hs.%0A%F0%9F%93%8D%20Tu%20lugar%20en%20el%20barrio%3A%20Zelarray%C3%A1n%203233.%0APara%20que%20apenas%20lea%20este%20chat%20ya%20arranquemos%20a%20trabajar%2C%20dejame%20ac%C3%A1%20tu%20nombre%20y%20contame%3A%20%C2%BFCu%C3%A1l%20es%20tu%20objetivo%20principal%3F%0A%C2%A1Dale%20que%20hoy%20es%20el%20momento%20exacto%20para%20empezar%2C%20te%20esperamos!%20%F0%9F%92%AA%0A" target="_blank" rel="noopener noreferrer">
+             Consultar por WhatsApp
+          </a>
         </article>
       </div>
     </section>
@@ -360,4 +384,5 @@
   </footer>
 <script src="script.js"></script>
 </body>
+</html>
 </html>
