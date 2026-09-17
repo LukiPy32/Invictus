@@ -1,0 +1,24 @@
+INVICTUS - ESTADO DEL SEO Y CONTENIDO
+======================================
+
+Ya incluido:
+- Nombre: Invictus
+- Dirección: Zelarrayán 3233, Bahía Blanca
+- Teléfono: 2921 49-5800
+- Instagram: @invictus.gimnasio
+- Horarios reales
+- Botón de ubicación con indicaciones de Google Maps
+- Meta description
+- Open Graph para compartir
+- Datos estructurados Schema.org (ExerciseGym)
+- robots.txt
+- Diseño responsive
+
+Pendiente para una versión definitiva:
+- Precios/planes reales
+- Fotos reales del gimnasio
+- Fotos o descripciones de Andy, Augusto y Rocío
+- Equipamiento real para reemplazar los datos de muestra
+- Dominio/URL definitiva para agregar canonical, og:url y sitemap.xml
+- Confirmar si el número también funciona como WhatsApp para agregar botón directo
+- Google Search Console y Perfil de Empresa de Google
