@@ -272,3 +272,48 @@ footer{padding:35px 0;background:#07090b}
   .hero-actions{flex-direction:column}
   .btn{width:100%}
 }
+
+
+.price-dual{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  font-family:"Montserrat",sans-serif;
+  font-size:1.6rem;
+  font-weight:800;
+}
+.price-dual span{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--line);
+}
+.price-dual small{
+  color:var(--muted);
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.family-prices{
+  margin:20px 0;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.family-prices div{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+.family-prices strong{
+  font-size:.9rem;
+}
+.family-prices span{
+  color:var(--gold);
+  font-weight:800;
+}

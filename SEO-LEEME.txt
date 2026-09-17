@@ -2,6 +2,7 @@ INVICTUS - ESTADO DEL SEO Y CONTENIDO
 ======================================
 
 Ya incluido:
+- Planes y precios reales cargados
 - Nombre: Invictus
 - Dirección: Zelarrayán 3233, Bahía Blanca
 - Teléfono: 2921 49-5800
@@ -15,10 +16,9 @@ Ya incluido:
 - Diseño responsive
 
 Pendiente para una versión definitiva:
-- Precios/planes reales
 - Fotos reales del gimnasio
 - Fotos o descripciones de Andy, Augusto y Rocío
 - Equipamiento real para reemplazar los datos de muestra
 - Dominio/URL definitiva para agregar canonical, og:url y sitemap.xml
-- Confirmar si el número también funciona como WhatsApp para agregar botón directo
+- WhatsApp directo configurado con mensaje automático y botón flotante
 - Google Search Console y Perfil de Empresa de Google
