@@ -319,161 +319,192 @@ footer{padding:35px 0;background:#07090b}
 }
 
 
-/* ===== Planes rediseñados ===== */
-.pricing-grid-clean{
-  align-items:stretch;
-  gap:22px;
+
+
+/* ===== Planes Invictus v2 ===== */
+.plans-heading{
+  margin-bottom:42px;
 }
 
-.plan-card{
+.plans-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+  align-items:stretch;
+}
+
+.membership-card{
   position:relative;
   display:flex;
   flex-direction:column;
-  min-height:500px;
-  padding:32px;
-  background:linear-gradient(180deg,#1a1f25 0%,#161b20 100%);
-  border:1px solid rgba(255,255,255,.09);
+  min-width:0;
+  padding:30px;
+  border:1px solid rgba(255,255,255,.10);
   border-radius:18px;
-  overflow:hidden;
+  background:#171c22;
+  box-shadow:0 18px 45px rgba(0,0,0,.16);
 }
 
-.plan-card-featured{
-  border-color:rgba(243,214,109,.75);
-  box-shadow:0 18px 60px rgba(243,214,109,.08);
+.membership-card--featured{
+  border-color:rgba(243,214,109,.8);
+  background:
+    linear-gradient(180deg,rgba(243,214,109,.055),transparent 38%),
+    #171c22;
 }
 
-.plan-card-featured::before{
+.membership-card--featured::before{
   content:"";
   position:absolute;
-  inset:0 0 auto 0;
+  left:24px;
+  right:24px;
+  top:0;
   height:3px;
+  border-radius:0 0 999px 999px;
   background:var(--gold);
 }
 
-.plan-top{
-  min-height:28px;
+.membership-card__head{
+  min-height:112px;
   display:flex;
   justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  margin-bottom:16px;
+  align-items:flex-start;
+  gap:14px;
+  padding-bottom:22px;
+  border-bottom:1px solid var(--line);
 }
 
-.plan-kicker{
+.membership-card__eyebrow{
+  display:block;
+  margin-bottom:8px;
   color:var(--gold);
   font-size:.72rem;
-  line-height:1.3;
+  line-height:1.25;
   font-weight:900;
   letter-spacing:.14em;
   text-transform:uppercase;
 }
 
-.plan-badge{
-  flex:none;
-  padding:6px 9px;
-  border-radius:999px;
-  background:var(--gold);
-  color:#111;
-  font-size:.62rem;
-  font-weight:900;
-  letter-spacing:.05em;
-}
-
-.plan-card h3{
-  margin:0;
-  font-size:1.5rem;
+.membership-card__head h3{
+  margin:0 0 6px;
+  color:var(--text);
+  font-size:1.32rem;
   line-height:1.25;
 }
 
-.plan-frequency{
-  min-height:26px;
-  margin:7px 0 24px;
+.membership-card__head p{
+  margin:0;
   color:var(--muted);
   font-size:.82rem;
+  line-height:1.45;
 }
 
-.plan-prices{
+.membership-card__tag{
+  flex:none;
+  padding:7px 10px;
+  border-radius:999px;
+  background:var(--gold);
+  color:#111;
+  font-size:.60rem;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+
+.membership-card__prices{
   display:grid;
   gap:10px;
-  margin-bottom:24px;
+  padding:22px 0;
 }
 
-.plan-price-row{
+.membership-price{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:18px;
-  min-height:70px;
-  padding:15px 17px;
-  background:#11161b;
+  gap:14px;
+  padding:16px 17px;
   border:1px solid rgba(255,255,255,.07);
   border-radius:11px;
+  background:#11161b;
 }
 
-.payment-type{
-  color:#b9bcc1;
-  font-size:.78rem;
+.membership-price span{
+  color:#aeb2b7;
+  font-size:.76rem;
   font-weight:700;
+  letter-spacing:.04em;
   text-transform:uppercase;
-  letter-spacing:.06em;
 }
 
-.plan-price-row strong{
+.membership-price strong{
   white-space:nowrap;
   color:var(--text);
   font-family:"Montserrat",sans-serif;
-  font-size:1.35rem;
+  font-size:1.28rem;
   line-height:1;
   font-weight:800;
 }
 
-.plan-card-featured .plan-price-row strong{
+.membership-card--featured .membership-price strong{
   color:var(--gold);
 }
 
-.plan-price-row strong small{
-  font-size:.68rem;
-  font-weight:700;
+.membership-price small{
   color:var(--muted);
+  font-size:.62em;
+  font-weight:700;
 }
 
-.plan-description{
+.membership-card__description{
   margin:0 0 26px;
   color:var(--muted);
-  font-size:.88rem;
-  line-height:1.65;
+  font-size:.86rem;
+  line-height:1.6;
 }
 
-.plan-button{
+.membership-card__button{
   width:100%;
-  margin-top:auto !important;
+  margin-top:auto;
 }
 
-@media (max-width:850px){
-  .plan-card{
+@media (max-width:980px){
+  .plans-grid{
+    grid-template-columns:1fr;
+    max-width:680px;
+  }
+
+  .membership-card{
+    min-height:auto;
+  }
+
+  .membership-card__head{
     min-height:auto;
   }
 }
 
 @media (max-width:520px){
-  .plan-card{
-    padding:24px 20px;
+  .membership-card{
+    padding:22px 18px;
+    border-radius:14px;
   }
 
-  .plan-price-row{
-    min-height:64px;
+  .membership-card__head{
+    padding-bottom:18px;
+  }
+
+  .membership-card__tag{
+    display:none;
+  }
+
+  .membership-price{
     padding:14px;
   }
 
-  .plan-price-row strong{
-    font-size:1.18rem;
+  .membership-price strong{
+    font-size:1.12rem;
   }
 
-  .payment-type{
-    font-size:.7rem;
+  .membership-price span{
+    font-size:.68rem;
   }
-
-  .plan-badge{
-    display:none;
+}
   }
 }
